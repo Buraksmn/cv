@@ -26,7 +26,8 @@ export const RESUME_DATA = {
   locationLink: "",
   about: "Frontend Developer",
   summary:
-    "Alaylı olarak başladıgım bu sektörde Frontend developer olarak 3+ yılı geçik bir tecrübem var. 3 Farklı firmada çalıştım ve 0 dan 100e birçok proje geliştirdim. canlı sonrası müşteriye destek verdim ve yeni özellikler ekledim.",
+    "Frontend alanında 4 yılı aşkın bir süredir aktif olarak çalışmaktayım. Bu süre boyunca edindiğim deneyimle, farklı sektörlere yönelik web uygulamaları ve kullanıcı arayüzleri geliştirdim. Proje yaşam döngüsünün tamamında yer alarak, ihtiyaç analizinden tasarım aşamasına, geliştirmeden canlıya almaya ve sonrasında da bakım desteğine kadar tüm süreçlerde görev aldım. Özellikle sıfırdan proje geliştirme konusunda uzmanlaştım ve karmaşık kullanıcı deneyimlerini başarılı bir şekilde hayata geçirdim.",
+  highlights: ["Problem Solving", "Crisis Management"],
   personalWebsiteUrl: "https://www.buraksmn.dev/",
   contact: {
     email: "buraksmn0@gmail.com",
@@ -49,50 +50,45 @@ export const RESUME_DATA = {
     {
       company: "Esa Esports",
       link: "https://esaesports.com/",
-      badges: ["Remote","React","NextJS","TypeScript"],
+      badges: ["Remote", "React", "NextJS", "TypeScript"],
       title: "Mid. Frontend Developer",
       start: "2023",
       end: "Halen",
       description:
-        "0 dan kurulan bir ekip ile oyuncuların ilgi alanlarındaki oyunlarda turnuva açıp veya turnuvalara katılabilecegi ready2.gg adında bir proje oluşturduk ve yeni özellikler ile geliştirmelere devam ediyoruz.",
+        "Ready2.gg adlı oyun turnuvası platformunda, sıfırdan kurulan bir ekipte görev alarak oyuncuların ilgi alanlarına uygun turnuvalar oluşturmasına ve bu turnuvalara katılmasına olanak tanıyan bir platform geliştirdim. Projenin tüm aşamalarında yer alarak, ihtiyaç analizinden tasarım sürecine, geliştirmeden canlıya almaya kadar aktif rol oynadım. Platformun kullanıcı deneyimini iyileştirmek ve yeni özellikler eklemek amacıyla sürekli olarak geliştirme çalışmalarına öncülük ettim.",
     },
     {
       company: "Hub.Studio",
       link: "",
-      badges: ["React","React Native","NextJs","NX","TypeScript"],
+      badges: ["React", "React Native", "NextJs", "NX", "TypeScript"],
       title: "Mid. Frontend Developer",
       logo: ClevertechLogo,
       start: "2022",
       end: "2022",
       description:
-        "Reactjs , ReactNative ve typescript kullanarak kripto para uygulaması geliştirdik.\n" +
-        "Şirketin Kendi içerisinde kullanılan CRM projesinin dönüşüm/yenileme süreçlerinde görev aldım",
+        "Blockchain Teknolojileri: React Native ve TypeScript ile geliştirdiğim kripto para uygulamasıyla, kullanıcıların portföylerini takip etmelerini, piyasa analizleri yapmalarını ve güvenli bir şekilde işlem yapmalarını sağladım. \n" +
+        "Şirketin mevcut CRM sisteminin eksikliklerini belirleyerek, daha verimli ve kullanıcı dostu bir arayüz için yenilikçi çözümler sundum. Bu süreçte, mevcut sistemin mimarisini analiz ederek, ölçeklenebilir ve sürdürülebilir bir yapı oluşturmaya odaklandım.",
     },
     {
       company: "Ehesapp & Bermuda",
       link: "https://ehesapp.com/",
-      badges: ["Remote","ReactJS","Redux"],
+      badges: ["Remote", "ReactJS", "Redux"],
       title: "JR. Frontend Developer → Mid. Frontend Developer",
       logo: JojoMobileLogo,
       start: "2020",
       end: "2022",
-      description:"B2B ve B2C projeleri geliştirdik. Yurt içi ve yurt dışı projelerinde desteklerde bulundum ve geliştirmeler yaptım. 0-100'e ehesapp projesini geliştirdik ve canlıya aldık. canlı sonrası müşteri taleplerine göre yeni özellikler ekledim.",
+      description:
+        "B2B ve B2C olmak üzere farklı sektörlere yönelik projelerde yer aldım. Yurt içi ve yurt dışı müşteriler için yazılım çözümleri geliştirdim ve destek sağladım. Ehesapp projesini baştan sona yöneterek canlıya aldım ve müşteri geri bildirimleri doğrultusunda sürekli geliştirdim.",
     },
   ],
-  skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js",
-    "React Native"
-  ],
+
+  frontend: ["JavaScript", "TypeScript"],
+  libs: ["ReactJs", "NextJs", "React Native"],
+  tools: ["Github", "Gitlab", "GIT", "Figma", "Zeplin"],
   projects: [
     {
       title: "Ready2.gg",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-      ],
-      description: "Oyuncuların ve Organizatörlerin turnuvalar oluşturup oynatabilecegi bir platform",
+      techStack: ["TypeScript", "Next.js"],
       link: {
         label: "Ready2.gg",
         href: "https://Ready2.gg/",
@@ -100,11 +96,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Ehesapp",
-      techStack: [
-        "React",
-        "Next.js",
-      ],
-      description: "Büyük Firmaların Tüm banka hesaplarını tek bir uygulama üzerinden görüntüleyip rapolar sunan bir uygulama",
+      techStack: ["React", "Next.js"],
+
       link: {
         label: "Ehesapp",
         href: "https://ehesapp.com/",
@@ -112,46 +105,41 @@ export const RESUME_DATA = {
     },
     {
       title: "Sline",
-      techStack: [
-        "React",
-      ],
-      description: "Sadal firmasına geliştirdigimiz bir B2C projesi",
+      techStack: ["React", "Redux"],
       link: {
         label: "S-line.com.tr",
-        href:"https://s-line.com.tr/",
+        href: "https://s-line.com.tr/",
       },
     },
     {
-      title: "Buraksmn.dev",
-      techStack: ["Side Project", "Next.js"],
-      description:
-        "Kişisel web sitem. Nextjs ve T3Stack kullanılarak geliştirildi.",
-      link: {
-        label: "buraksmn.dev",
-        href: "https://buraksmn.dev/",
-      },
+      title: "Sadal B2B",
+      techStack: ["React", "Redux"],
     },
     {
-      title: "PurchasingPowerTurkey",
-      techStack: ["Side Project", "Next.js","Radix UI"],
-      description:
-        "2023 Yılının sonunda belli olan yeni asgari ücretin karşısında çalışan kişilerin alım gücünü korumak için ne kadar maaş alması gerektigini hesaplar",
-      logo: Minimal,
-      link: {
-        label: "PurchasingPowerTurkey",
-        href: "https://purchasing-power-turkey.vercel.app/",
-      },
+      title: "CRM (Hub Studio)",
+      techStack: ["React"],
     },
     {
-      title: "Tekerlekizi",
-      techStack: ["Side Project", "Next.js", "Ant desing"],
-      description:
-        "İnsanların çalınan araçlarını paylaşabilecegi ve bulunması sürecinde destek olan kişilere ödül dagıtmayı hedefleyen bir app (geliştirmelere devam ediyorum)",
-      logo: BarepapersLogo,
-      link: {
-        label: "Tekerlekizi",
-        href: "https://tekerlekizi-web.vercel.app/",
-      },
+      title: "Amax - Quote App",
+      techStack: ["React"],
+    },
+    {
+      title: "Amax - Landing Pages",
+      techStack: ["React"],
+    },
+  ],
+  freelance: [
+    {
+      title: "Dojo Talent",
+      techStack: ["TypeScript", "Next.js"],
+    },
+    {
+      title: "Her Scooter Backoffice",
+      techStack: ["TypeScript", "Next.js", "vite"],
+    },
+    {
+      title: "Vepara Backoffice",
+      techStack: ["TypeScript", "React.js", "vite"],
     },
   ],
 } as const;

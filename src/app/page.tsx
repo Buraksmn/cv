@@ -98,7 +98,15 @@ export default function Page() {
           </p>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Highlights Skils</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.highlights.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+        </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Work Experience / History</h2>
           {RESUME_DATA.work.map((work) => {
             return (
               <Card key={work.company}>
@@ -137,30 +145,19 @@ export default function Page() {
             );
           })}
         </Section>
+
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
-          {RESUME_DATA.education.map((education:any) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
-              </Card>
-            );
-          })}
+          <h2 className="text-xl font-bold">Skils</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.frontend.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Libs.</h2>
           <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
+            {RESUME_DATA.libs.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
@@ -169,7 +166,24 @@ export default function Page() {
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project) => {
+            {RESUME_DATA.projects.map((project: any) => {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  tags={project.techStack}
+                  link={"link" in project ? project.link.href : undefined}
+                />
+              );
+            })}
+          </div>
+        </Section>
+
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className="text-xl font-bold">Freelance Projects</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.freelance.map((project: any) => {
               return (
                 <ProjectCard
                   key={project.title}
